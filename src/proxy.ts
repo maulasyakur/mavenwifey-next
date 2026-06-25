@@ -4,6 +4,12 @@ import { createClient } from "./lib/supabase/server";
 
 // This function can be marked `async` if using `await` inside
 export async function proxy(request: NextRequest) {
+  const { pathname } = request.nextUrl;
+
+  // Skip middleware for the login page
+  if (pathname === "/admin/login" || pathname === "/admin/login/") {
+    return NextResponse.next();
+  }
   const supabase = await createClient();
   const {
     data: { user },
@@ -19,5 +25,5 @@ export async function proxy(request: NextRequest) {
 // export default function proxy(request: NextRequest) { ... }
 
 export const config = {
-  matcher: ["/admin", "/admin/blog"],
+  matcher: ["/admin/:path*"],
 };
