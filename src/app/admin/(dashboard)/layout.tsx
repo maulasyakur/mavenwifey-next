@@ -10,12 +10,12 @@ export default function AdminRootLayout({
   return (
     <SidebarProvider>
       <AppSidebar />
-      <main className="flex-1">
-        <div className="border-b-2 p-2 flex items-center justify-between">
+      <main className="flex-1 flex flex-col">
+        <div className="border-b-2 p-2 flex items-center justify-between shrink-0">
           <SidebarTrigger />
           <ModeToggle />
         </div>
-        <div className="p-4">{children}</div>
+        <div className="flex-1 p-4 overflow-auto">{children}</div>
       </main>
     </SidebarProvider>
   );

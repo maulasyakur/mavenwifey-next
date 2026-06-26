@@ -11,8 +11,8 @@ import LoginForm from "./form";
 
 export default function Login() {
   return (
-    <div className="flex h-screen items-center justify-center">
-      <div className="flex w-full max-w-sm flex-col gap-6">
+    <div className="flex min-h-svh w-full items-center justify-center p-6 md:p-10">
+      <div className="w-full max-w-sm space-y-4">
         <div className="flex items-center gap-2 justify-center">
           <Image src={AboutMeIcon} alt="Login logo" />
           <h1 className="text-2xl font-bold">mavenwifey</h1>
