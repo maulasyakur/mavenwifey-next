@@ -11,15 +11,6 @@ const wallpapersDict: Record<string, { image?: string; className?: string }> = {
     image: BlogBackgroundImage.src,
     className: "bg-black/70 bg-blend-darken",
   },
-  "/socials-contact": {
-    className: "bg-black/70 bg-blend-darken",
-  },
-  "/photo-album": {
-    className: "bg-black/70 bg-blend-darken",
-  },
-  "/about-me": {
-    className: "bg-black/70 bg-blend-darken",
-  },
 };
 
 export default function PublicRootLayoutComponent({

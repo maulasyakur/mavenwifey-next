@@ -16,7 +16,7 @@ const apps = [
     url: "/socials-contact",
   },
   { icon: GuestBookIcon, name: "Guest Book", url: "/guest-book" },
-  { icon: ChatRoomIcon, name: "Chat Room", url: "/chat-room" },
+  { icon: ChatRoomIcon, name: "Chat Room", url: "/chat" },
   { icon: PhotoAlbumIcon, name: "Photo Album", url: "/photo-album" },
   { icon: AboutMeIcon, name: "About Me", url: "/about-me" },
 ];
